@@ -1,3 +1,6 @@
+*.xcodeproj/*
+homework3.xcodeproj*
+
 # Compiled Object files
 *.slo
 *.lo
