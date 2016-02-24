@@ -6,10 +6,16 @@
 //  Copyright (c) 2016 Group 3. All rights reserved.
 //
 
+#include <pthread.h>
 #include "MediumTicketSeller.h"
 
 MediumTicketSeller::MediumTicketSeller() {
 	
+}
+
+void MediumTicketSeller::start() {
+	pthread_t thread;
+	pthread_create(&thread, NULL, MediumTicketSeller::sellTickets, this);
 }
 
 void* MediumTicketSeller::sellTickets(void *ticketsellerptr) {

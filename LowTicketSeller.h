@@ -15,5 +15,6 @@ class LowTicketSeller : public TicketSeller
 public:
 	LowTicketSeller();
 private:
+	void start();
 	static void* sellTickets(void*);
 };

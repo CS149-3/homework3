@@ -15,5 +15,6 @@ class HighTicketSeller : public TicketSeller
 public:
 	HighTicketSeller();
 private:
+	void start();
 	static void* sellTickets(void*);
 };

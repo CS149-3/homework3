@@ -15,5 +15,6 @@ class MediumTicketSeller : public TicketSeller
 public:
 	MediumTicketSeller();
 private:
+	void start();
 	static void* sellTickets(void*);
 };

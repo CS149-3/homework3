@@ -20,5 +20,6 @@ public:
 	vector<Customer> queue;
 	TicketSeller();
 private:
+	virtual void start();
 	static void* sellTickets(void*);
 };
