@@ -6,9 +6,14 @@
 //  Copyright (c) 2016 Group 3. All rights reserved.
 //
 
-#ifndef __homework3__MediumTicketSeller__
-#define __homework3__MediumTicketSeller__
-
+#pragma once
 #include <iostream>
+#include "TicketSeller.h"
 
-#endif /* defined(__homework3__MediumTicketSeller__) */
+class MediumTicketSeller : public TicketSeller
+{
+public:
+	MediumTicketSeller();
+private:
+	static void* sellTickets(void*);
+};

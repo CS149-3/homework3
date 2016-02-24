@@ -7,3 +7,28 @@
 //
 
 #include "HighTicketSeller.h"
+
+HighTicketSeller::HighTicketSeller() {
+	
+}
+
+void* HighTicketSeller::sellTickets(void *ticketsellerptr) {
+	
+	vector<Customer> queue = static_cast<TicketSeller *>(ticketsellerptr)->queue;
+	
+	// example from here down, we need to have this run for 60 sleep cycles total, not get null from start of queue, etc.
+	
+	Customer* currentCustomer = &queue.front();
+	
+	// spend time selling ticket (this will vary by subclass)
+	sleep(1);
+	
+	// assign seat to Customer
+	
+	
+	// remove Customer from queue
+	queue.erase(queue.begin());
+	
+	// return nullptr because the compiler said so
+	return nullptr;
+}

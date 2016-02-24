@@ -6,9 +6,21 @@
 //  Copyright (c) 2016 Group 3. All rights reserved.
 //
 
-#ifndef __homework3__Customer__
-#define __homework3__Customer__
-
+#pragma once
 #include <iostream>
+#include <unistd.h>
+#include "TicketSeller.h"
 
-#endif /* defined(__homework3__Customer__) */
+using namespace std;
+
+class TicketSeller;
+
+class Customer {
+	int arrivalTime;
+	class TicketSeller* ticketSeller;
+public:
+	Customer(int arrivalTime, class TicketSeller* ticketSeller);
+private:
+	static void* wait(void*);
+};
+

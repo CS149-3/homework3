@@ -6,9 +6,19 @@
 //  Copyright (c) 2016 Group 3. All rights reserved.
 //
 
-#ifndef __homework3__TicketSeller__
-#define __homework3__TicketSeller__
-
+#pragma once
 #include <iostream>
+#include <vector>
+#include "Customer.h"
 
-#endif /* defined(__homework3__TicketSeller__) */
+using namespace std;
+
+class Customer;
+
+class TicketSeller {
+public:
+	vector<Customer> queue;
+	TicketSeller();
+private:
+	static void* sellTickets(void*);
+};

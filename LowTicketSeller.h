@@ -6,9 +6,14 @@
 //  Copyright (c) 2016 Group 3. All rights reserved.
 //
 
-#ifndef __homework3__LowTicketSeller__
-#define __homework3__LowTicketSeller__
-
+#pragma once
 #include <iostream>
+#include "TicketSeller.h"
 
-#endif /* defined(__homework3__LowTicketSeller__) */
+class LowTicketSeller : public TicketSeller
+{
+public:
+	LowTicketSeller();
+private:
+	static void* sellTickets(void*);
+};
