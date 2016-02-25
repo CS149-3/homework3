@@ -3,6 +3,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "Removing old compiled files..."
 rm $DIR/*.o
+rm $DIR/homework3.out
 
 echo "Precompiling all cpp files..."
 for i in $DIR/*.cpp; do
@@ -10,7 +11,7 @@ for i in $DIR/*.cpp; do
 done
 
 echo "Linking and creating final executable..."
-g++ -pthread -o $DIR/homework3.o $DIR/*.o
+g++ -pthread -o $DIR/homework3.out $DIR/*.o
 
 echo ""
 echo "----------------------------------"
