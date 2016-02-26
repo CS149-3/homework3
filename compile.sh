@@ -3,6 +3,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "Removing old compiled files..."
 rm $DIR/*.o
+rm $DIR/homework3.out
 
 echo "Precompiling all cpp files..."
 for i in $DIR/*.cpp; do
@@ -10,7 +11,7 @@ for i in $DIR/*.cpp; do
 done
 
 echo "Linking and creating final executable..."
-g++ -pthread -o $DIR/homework3.o $DIR/*.o
+g++ -pthread -o $DIR/homework3.out $DIR/*.o
 
 echo ""
 echo "----------------------------------"
@@ -21,10 +22,10 @@ echo "To run the program make sure you are in the right directory:"
 echo "cd $DIR"
 echo ""
 echo "Then run the command:"
-echo "./homework3.o"
+echo "./homework3.out"
 echo ""
 echo "Alternatively, you can run the file from any directory with this command:"
-echo "$DIR/homework3.o"
+echo "$DIR/homework3.out"
 echo ""
 echo "----------------------------------"
 echo ""
