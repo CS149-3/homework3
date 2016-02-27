@@ -76,6 +76,12 @@ int main(int argc, const char * argv[]) {
 		sleep(1);
 		timer->increment();
 	}
-	
+	for(int rows = 0; rows < 10; rows++)
+	{
+			for(int cols = 0; cols < 10; cols++)
+			{
+					cout << "seat " << rows << " " << cols << " contains: " << seats[rows][cols] << endl;
+			}
+	}
     return 0;
 }
