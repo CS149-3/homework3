@@ -18,8 +18,11 @@ class TicketSeller;
 class Customer {
 	int arrivalTime;
 	class TicketSeller* ticketSeller;
+	static class Timer* timer;
 public:
-	Customer(int arrivalTime, class TicketSeller* ticketSeller);
+	string name;
+	static void setTimer(class Timer* timer);
+	Customer(string name, int arrivalTime, class TicketSeller* ticketSeller);
 private:
 	static void* wait(void*);
 };
