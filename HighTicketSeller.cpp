@@ -8,6 +8,7 @@
 
 #include "HighTicketSeller.h"
 
+
 HighTicketSeller::HighTicketSeller(string name, seat_matrix* seats) : TicketSeller(name, seats) {
 	
 }
@@ -17,12 +18,27 @@ int HighTicketSeller::sellTime() {
 }
 
 bool HighTicketSeller::assignSeat(string customerName) {
+	bool foundSeat = false;
 	
 	// search seats for an open seat according to the priority
-	
-	
+	for(int row = 0; row < 10; row++)
+	{
+		if(foundSeat)
+			break;
+		for(int col = 0; col < 10; col++)
+		{
+			if(seats[row][col].length() == 0)//empty
+			{
+				seats[row][col] = customerName;//add customer to matrix
+				foundSeat = true;
+				break;
+			}
+			
+		}
+	}
+		
 	// if an open seat is found, place the customer there (customerName)
-	if (true) {
+	if (foundSeat) {
 		cout << this->timer->currentTime() << " " << customerName << " was assigned a seat\n";
 		return true;
 	}
