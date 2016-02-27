@@ -25,6 +25,7 @@ protected:
 public:
 	string name;
 	seat_matrix* seats;
+	const int ROWS, COLS = 10;
 	vector<Customer> queue;
 	TicketSeller(string name, seat_matrix* seats);
 	virtual void start();
