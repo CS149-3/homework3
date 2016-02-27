@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <unistd.h>
+#include <pthread.h>
 #include "Customer.h"
 #include "Timer.h"
 
@@ -22,6 +23,7 @@ class Customer;
 class TicketSeller {
 protected:
 	static class Timer* timer;
+	static pthread_mutex_t seats_mutex;
 public:
 	string name;
 	seat_matrix* seats;
