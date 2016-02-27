@@ -9,17 +9,28 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <unistd.h>
 #include "Customer.h"
+#include "Timer.h"
 
 using namespace std;
+
+typedef string seat_matrix[10];
 
 class Customer;
 
 class TicketSeller {
+protected:
+	static class Timer* timer;
 public:
+	string name;
+	seat_matrix* seats;
 	vector<Customer> queue;
-	TicketSeller();
-private:
+	TicketSeller(string name, seat_matrix* seats);
 	virtual void start();
+	virtual int sellTime() = 0;
+	virtual bool assignSeat(string customerName) = 0;
+	static void setTimer(class Timer* timer);
+private:
 	static void* sellTickets(void*);
 };

@@ -9,28 +9,36 @@
 #include <pthread.h>
 #include "Customer.h"
 
-Customer::Customer(int arrivalTime, class TicketSeller* ticketSeller) {
-	
+Timer* Customer::timer = nullptr;
+
+Customer::Customer(string name, int arrivalTime, class TicketSeller* ticketSeller) {
+	this->name = name;
 	this->arrivalTime = arrivalTime;
 	this->ticketSeller = ticketSeller;
+	this->timer = timer;
 	
 	pthread_t thread;
 	
 	// wait until arrival
 	pthread_create(&thread, NULL, Customer::wait, this);
-	cout << "Customer thread started\n";
 	
+}
+
+void Customer::setTimer(class Timer* timer) {
+	Customer::timer = timer;
 }
 
 void* Customer::wait(void *customerptr) {
 	
 	Customer* customer = static_cast<Customer *>(customerptr);
-	cout << "customer waiting...\n";
+	Timer* timer = customer->timer;
+	
 	// wait until arrival
 	sleep(customer->arrivalTime);
-	cout << "customer arrived!";
+	
 	// upon arrival join ticket seller queue
 	customer->ticketSeller->queue.push_back(*customer);
+	cout << timer->currentTime() << " " << customer->name << " arrived\n";
 	
 	// return nullptr because the compiler said so
 	return nullptr;

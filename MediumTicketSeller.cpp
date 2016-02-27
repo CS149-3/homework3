@@ -6,35 +6,29 @@
 //  Copyright (c) 2016 Group 3. All rights reserved.
 //
 
-#include <pthread.h>
 #include "MediumTicketSeller.h"
 
-MediumTicketSeller::MediumTicketSeller() {
+MediumTicketSeller::MediumTicketSeller(string name, seat_matrix* seats) : TicketSeller(name, seats) {
 	
 }
 
-void MediumTicketSeller::start() {
-	pthread_t thread;
-	pthread_create(&thread, NULL, MediumTicketSeller::sellTickets, this);
+int MediumTicketSeller::sellTime() {
+	return rand() % 3 + 2;
 }
 
-void* MediumTicketSeller::sellTickets(void *ticketsellerptr) {
+bool MediumTicketSeller::assignSeat(string customerName) {
 	
-	vector<Customer> queue = static_cast<TicketSeller *>(ticketsellerptr)->queue;
-	
-	// example from here down, we need to have this run for 60 sleep cycles total, not get null from start of queue, etc.
-	
-	Customer* currentCustomer = &queue.front();
-	
-	// spend time selling ticket (this will vary by subclass)
-	sleep(1);
-	
-	// assign seat to Customer
+	// search seats for an open seat according to the priority
 	
 	
-	// remove Customer from queue
-	queue.erase(queue.begin());
-	
-	// return nullptr because the compiler said so
-	return nullptr;
+	// if an open seat is found, place the customer there (customerName)
+	if (true) {
+		cout << this->timer->currentTime() << " " << customerName << " was assigned a seat\n";
+		return true;
+	}
+	else {
+	// else sold out
+		cout << timer->currentTime() << " " << customerName << " was told the concert is sold out\n";
+		return false;
+	}
 }

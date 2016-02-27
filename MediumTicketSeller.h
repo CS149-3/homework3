@@ -7,14 +7,12 @@
 //
 
 #pragma once
-#include <iostream>
 #include "TicketSeller.h"
 
 class MediumTicketSeller : public TicketSeller
 {
 public:
-	MediumTicketSeller();
-private:
-	void start();
-	static void* sellTickets(void*);
+	MediumTicketSeller(string name, seat_matrix* seats);
+	virtual int sellTime();
+	virtual bool assignSeat(string customerName);
 };
