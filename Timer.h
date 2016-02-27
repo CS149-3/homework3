@@ -6,9 +6,16 @@
 //  Copyright (c) 2016 Group 3. All rights reserved.
 //
 
-#ifndef __homework3__Timer__
-#define __homework3__Timer__
-
+#pragma once
 #include <iostream>
+#include <unistd.h>
 
-#endif /* defined(__homework3__Timer__) */
+using namespace std;
+
+class Timer {
+	int time;
+public:
+	Timer();
+	string currentTime();
+	void increment();
+};
