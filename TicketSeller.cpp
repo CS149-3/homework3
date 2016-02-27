@@ -9,8 +9,16 @@
 #include <pthread.h>
 #include "TicketSeller.h"
 
-TicketSeller::TicketSeller() {
-	
+Timer* TicketSeller::timer = nullptr;
+
+TicketSeller::TicketSeller(string name, seat_matrix* seats) {
+	this->name = name;
+	this->seats = seats;
+	this->start();
+}
+
+void TicketSeller::setTimer(class Timer* timer) {
+	TicketSeller::timer = timer;
 }
 
 void TicketSeller::start() {
@@ -19,22 +27,38 @@ void TicketSeller::start() {
 }
 
 void* TicketSeller::sellTickets(void *ticketsellerptr) {
+	TicketSeller* ticketSeller = static_cast<TicketSeller *>(ticketsellerptr);
+	vector<Customer>* queue = &(ticketSeller->queue);
+	seat_matrix* seats = ticketSeller->seats;
+	Timer* timer = ticketSeller->timer;
 	
-	vector<Customer> queue = static_cast<TicketSeller *>(ticketsellerptr)->queue;
-	
-	// example from here down, we need to have this run for 60 sleep cycles total, not get null from start of queue, etc.
-	
-	Customer* currentCustomer = &queue.front();
-	
-	// spend time selling ticket (this will vary by subclass)
-	sleep(1);
-	
-	// assign seat to Customer
-	
-	
-	// remove Customer from queue
-	queue.erase(queue.begin());
-	
+	int time = 0;
+	while (time < 60) {
+		if (queue->empty()) {
+			// if no one in queue, wait one minute
+			sleep(1);
+			time++;
+		}
+		else {
+			Customer* currentCustomer = &(queue->front());
+			
+			// check for and attempt to assign customer to a seat
+			bool seatAvailable = ticketSeller->assignSeat(currentCustomer->name);
+			
+			if (seatAvailable) {
+				
+				// spend time selling ticket (this will vary by subclass)
+				sleep(ticketSeller->sellTime());
+				time += ticketSeller->sellTime();
+				cout << timer->currentTime() << " " << currentCustomer->name << " completed purchase\n";
+			}
+			
+			// remove Customer from queue
+			queue->erase(queue->begin());
+			cout << timer->currentTime() << " " << currentCustomer->name << " left\n";
+		}
+	}
 	// return nullptr because the compiler said so
 	return nullptr;
+	
 }
