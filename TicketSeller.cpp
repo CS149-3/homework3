@@ -17,7 +17,7 @@ TicketSeller::TicketSeller(string name, seat_matrix* seats) {
 	this->name = name;
 	this->seats = seats;
 	this->start();
-//	pthread_mutex_init(&queue_mutex, 0);
+	pthread_mutex_init(&queue_mutex, 0);
 }
 
 TicketSeller::~TicketSeller() {
