@@ -7,7 +7,7 @@ rm $DIR/homework3.out
 
 echo "Precompiling all cpp files..."
 for i in $DIR/*.cpp; do
-	g++ -c -std=c++11 -pthread $i -o $i.o
+	g++ -c -std=c++11 -pthread $i -o `basename "$i" .cpp`.o
 done
 
 echo "Linking and creating final executable..."
