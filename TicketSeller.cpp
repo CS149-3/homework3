@@ -91,7 +91,7 @@ void* TicketSeller::sellTickets(void *ticketsellerptr) {
 						string occupant = seats[row][seat] != "" ? seats[row][seat] : "-";
 						pthread_mutex_unlock(&TicketSeller::seats_mutex);
 						
-						seats_str += " " + occupant + "\t\t";
+						seats_str += " " + occupant + " \t";
 					}
 					seats_str += "\n";
 					
