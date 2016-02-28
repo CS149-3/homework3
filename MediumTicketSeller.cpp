@@ -20,9 +20,12 @@ bool MediumTicketSeller::assignSeat(string customerName) {
 	bool seatFound = false;
 	// search seats for an open seat according to the priority
 	int c = 19;
+	int oldRow = 0;
 	
-	for(int row = 4; 20%c > 0;)
+	for(int row = 4; 20%c >= 0;)
 	{
+		oldRow = row;
+		
 		if(seatFound)
 			break;
 			
@@ -45,6 +48,9 @@ bool MediumTicketSeller::assignSeat(string customerName) {
 				row += 20%c;
 		}
 		c--;
+		
+		if(oldRow == row)
+			break;
 	}
 	
 	// if an open seat is found, place the customer there (customerName)
