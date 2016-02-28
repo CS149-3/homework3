@@ -48,7 +48,7 @@ bool MediumTicketSeller::assignSeat(string customerName) {
 	}
 	
 	// if an open seat is found, place the customer there (customerName)
-	if (true) {
+	if (seatFound) {
 		cout << this->timer->currentTime() << " " << customerName << " was assigned a seat\n";
 		return true;
 	}
