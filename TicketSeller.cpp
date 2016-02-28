@@ -6,11 +6,11 @@
 //  Copyright (c) 2016 Group 3. All rights reserved.
 //
 
-#include <pthread.h>
 #include "TicketSeller.h"
 
 Timer* TicketSeller::timer = nullptr;
 pthread_mutex_t* TicketSeller::cout_mutex = nullptr;
+pthread_mutex_t TicketSeller::seats_mutex;
 
 TicketSeller::TicketSeller(string name, seat_matrix* seats) {
 	this->name = name;
@@ -31,6 +31,14 @@ void TicketSeller::start() {
 	pthread_create(&thread, NULL, TicketSeller::sellTickets, this);
 }
 
+void TicketSeller::initSeatsMutex() {
+	pthread_mutex_init(&TicketSeller::seats_mutex, 0);
+}
+
+void TicketSeller::destroySeatsMutex() {
+	pthread_mutex_destroy(&TicketSeller::seats_mutex);
+}
+
 void* TicketSeller::sellTickets(void *ticketsellerptr) {
 	TicketSeller* ticketSeller = static_cast<TicketSeller *>(ticketsellerptr);
 	vector<Customer>* queue = &(ticketSeller->queue);
@@ -48,7 +56,9 @@ void* TicketSeller::sellTickets(void *ticketsellerptr) {
 			Customer* currentCustomer = &(queue->front());
 			
 			// check for and attempt to assign customer to a seat
+			pthread_mutex_lock(&TicketSeller::seats_mutex);
 			bool seatAvailable = ticketSeller->assignSeat(currentCustomer->name);
+			pthread_mutex_unlock(&TicketSeller::seats_mutex);
 			
 			if (seatAvailable) {
 				

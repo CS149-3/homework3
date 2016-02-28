@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <unistd.h>
+#include <pthread.h>
 #include "Customer.h"
 #include "Timer.h"
 
@@ -23,6 +24,7 @@ class TicketSeller {
 protected:
 	static pthread_mutex_t* cout_mutex;
 	static class Timer* timer;
+	static pthread_mutex_t seats_mutex;
 public:
 	string name;
 	seat_matrix* seats;
@@ -33,6 +35,8 @@ public:
 	virtual bool assignSeat(string customerName) = 0;
 	static void setCoutMutex(pthread_mutex_t* cout_mutex);
 	static void setTimer(class Timer* timer);
+	static void initSeatsMutex();
+	static void destroySeatsMutex();
 private:
 	static void* sellTickets(void*);
 };

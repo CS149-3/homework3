@@ -40,6 +40,7 @@ int main(int argc, const char * argv[]) {
 	
 	// initialize ticket sellers
 	TicketSeller::setCoutMutex(&cout_mutex);
+	TicketSeller::initSeatsMutex();
 	TicketSeller::setTimer(timer);
 	
 	TicketSeller* H = new HighTicketSeller("H", seats);
@@ -97,6 +98,7 @@ int main(int argc, const char * argv[]) {
 	
 	// clean up
 	pthread_mutex_destroy(&cout_mutex);
+	TicketSeller::destroySeatsMutex();
 	
     return 0;
 }
