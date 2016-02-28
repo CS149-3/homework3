@@ -17,12 +17,27 @@ int LowTicketSeller::sellTime() {
 }
 
 bool LowTicketSeller::assignSeat(string customerName) {
+	bool foundSeat = false;
 	
 	// search seats for an open seat according to the priority
-	
+	for(int row = 9; row >= 0; row--)
+	{
+		if(foundSeat)
+			break;
+		for(int col = 9; col >=0; col--)
+		{
+			if(seats[row][col].length() == 0)//empty
+			{
+				seats[row][col] = customerName;//add customer to matrix
+				foundSeat = true;
+				break;
+			}
+			
+		}
+	}
 	
 	// if an open seat is found, place the customer there (customerName)
-	if (true) {
+	if (foundSeat) {
 		cout << this->timer->currentTime() << " " << customerName << " was assigned a seat\n";
 		return true;
 	}

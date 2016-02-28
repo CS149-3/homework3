@@ -78,6 +78,14 @@ int main(int argc, const char * argv[]) {
 		timer->increment();
 	}
 	
+	for(int i = 0; i < 10; i++)
+	{
+		for(int j = 0; j < 10; j++)
+		{
+			cout << "row " << i << ",col " << j << "  "<< seats[i][j] << endl;
+		}
+	}
+	
 	// clean up
 	TicketSeller::destroySeatsMutex();
 	
