@@ -25,6 +25,10 @@ int main(int argc, const char * argv[]) {
 	// randomizer for random int generation
 	srand (time(NULL));
 	
+	// mutex for output
+	pthread_mutex_t cout_mutex;
+	pthread_mutex_init(&cout_mutex, 0);
+	
 	// initialize empty array of seats
 	string seats[10][10] = {};
 	
@@ -35,6 +39,7 @@ int main(int argc, const char * argv[]) {
 	Timer* timer = new Timer();
 	
 	// initialize ticket sellers
+	TicketSeller::setCoutMutex(&cout_mutex);
 	TicketSeller::initSeatsMutex();
 	TicketSeller::setTimer(timer);
 	
@@ -55,6 +60,7 @@ int main(int argc, const char * argv[]) {
 	for (int i = 1; i < customersPerSeller; i++) {
 		string current_count_str = i <= 10 ? string("0") + to_string(i) : to_string(i);
 		
+		Customer::setCoutMutex(&cout_mutex);
 		Customer::setTimer(timer);
 		
 		new Customer("H0" + current_count_str, rand() % 60, H);
@@ -73,10 +79,14 @@ int main(int argc, const char * argv[]) {
 	
 	// run main thread for 60 seconds, print new line each second (for testing)
 	for (int i = 1; i < 60; i++) {
+		pthread_mutex_lock(&cout_mutex);
 		cout << "\n";
+		pthread_mutex_unlock(&cout_mutex);
 		sleep(1);
 		timer->increment();
 	}
+	
+	// output seats
 	
 	for(int i = 0; i < 10; i++)
 	{
@@ -87,6 +97,7 @@ int main(int argc, const char * argv[]) {
 	}
 	
 	// clean up
+	pthread_mutex_destroy(&cout_mutex);
 	TicketSeller::destroySeatsMutex();
 	
     return 0;

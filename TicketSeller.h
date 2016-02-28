@@ -22,6 +22,7 @@ class Customer;
 
 class TicketSeller {
 protected:
+	static pthread_mutex_t* cout_mutex;
 	static class Timer* timer;
 	static pthread_mutex_t seats_mutex;
 public:
@@ -32,6 +33,7 @@ public:
 	virtual void start();
 	virtual int sellTime() = 0;
 	virtual bool assignSeat(string customerName) = 0;
+	static void setCoutMutex(pthread_mutex_t* cout_mutex);
 	static void setTimer(class Timer* timer);
 	static void initSeatsMutex();
 	static void destroySeatsMutex();
