@@ -33,6 +33,8 @@ public:
 	virtual int sellTime() = 0;
 	virtual bool assignSeat(string customerName) = 0;
 	static void setTimer(class Timer* timer);
+	static void initSeatsMutex();
+	static void destroySeatsMutex();
 private:
 	static void* sellTickets(void*);
 };

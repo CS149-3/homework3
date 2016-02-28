@@ -26,6 +26,14 @@ void TicketSeller::start() {
 	pthread_create(&thread, NULL, TicketSeller::sellTickets, this);
 }
 
+void TicketSeller::initSeatsMutex() {
+	pthread_mutex_init(&TicketSeller::seats_mutex, 0);
+}
+
+void TicketSeller::destroySeatsMutex() {
+	pthread_mutex_destroy(&TicketSeller::seats_mutex);
+}
+
 void* TicketSeller::sellTickets(void *ticketsellerptr) {
 	TicketSeller* ticketSeller = static_cast<TicketSeller *>(ticketsellerptr);
 	vector<Customer>* queue = &(ticketSeller->queue);
