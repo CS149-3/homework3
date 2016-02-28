@@ -42,7 +42,9 @@ void* Customer::wait(void *customerptr) {
 	sleep(customer->arrivalTime);
 	
 	// upon arrival join ticket seller queue
-	customer->ticketSeller->queue.push_back(*customer);
+	pthread_mutex_lock(&(customer->ticketSeller->queue_mutex));
+	customer->ticketSeller->customerQueue.push_back(*customer);
+	pthread_mutex_unlock(&(customer->ticketSeller->queue_mutex));
 	pthread_mutex_lock(cout_mutex);
 	cout << timer->currentTime() << " " << customer->name << " arrived\n";
 	pthread_mutex_unlock(cout_mutex);

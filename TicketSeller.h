@@ -8,7 +8,7 @@
 
 #pragma once
 #include <iostream>
-#include <vector>
+#include <list>
 #include <unistd.h>
 #include <pthread.h>
 #include "Customer.h"
@@ -28,8 +28,10 @@ protected:
 public:
 	string name;
 	seat_matrix* seats;
-	vector<Customer> queue;
+	list<Customer> customerQueue;
+	static pthread_mutex_t queue_mutex;
 	TicketSeller(string name, seat_matrix* seats);
+	~TicketSeller();
 	virtual void start();
 	virtual int sellTime() = 0;
 	virtual bool assignSeat(string customerName) = 0;
