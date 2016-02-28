@@ -77,8 +77,8 @@ int main(int argc, const char * argv[]) {
 		new Customer("L6" + current_count_str, rand() % 60, L6);
 	}
 	
-	// run main thread for 60 seconds, print new line each second (for testing)
-	for (int i = 1; i < 60; i++) {
+	// run main thread for 60 seconds, print new line each second (goes to 61 to give a second for final thread output)
+	for (int i = 1; i < 61; i++) {
 		pthread_mutex_lock(&cout_mutex);
 		cout << "\n";
 		pthread_mutex_unlock(&cout_mutex);
@@ -87,6 +87,7 @@ int main(int argc, const char * argv[]) {
 	}
 	
 	// output seats
+	pthread_mutex_lock(&cout_mutex);
 	cout << "Final seating assignments:\n";
 	for (int row = 0; row < 10; row ++) {
 		for (int seat = 0; seat < 10; seat++) {
@@ -95,12 +96,12 @@ int main(int argc, const char * argv[]) {
 			cout << " " << occupant << " \t";
 		}
 		cout << "\n";
-		
 	}
 	
 	cout << "H Customers Seated: " << HighTicketSeller::ticketsSold << "\n";
 	cout << "M Customers Seated: " << MediumTicketSeller::ticketsSold << "\n";
 	cout << "L Customers Seated: " << LowTicketSeller::ticketsSold << "\n";
+	pthread_mutex_unlock(&cout_mutex);
 	
 	// clean up
 	pthread_mutex_destroy(&cout_mutex);
