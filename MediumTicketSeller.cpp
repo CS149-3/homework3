@@ -55,12 +55,16 @@ bool MediumTicketSeller::assignSeat(string customerName) {
 	
 	// if an open seat is found, place the customer there (customerName)
 	if (seatFound) {
+		pthread_mutex_lock(cout_mutex);
 		cout << this->timer->currentTime() << " " << customerName << " was assigned a seat\n";
+		pthread_mutex_unlock(cout_mutex);
 		return true;
 	}
 	else {
-	// else sold out
+		// else sold out
+		pthread_mutex_lock(cout_mutex);
 		cout << timer->currentTime() << " " << customerName << " was told the concert is sold out\n";
+		pthread_mutex_unlock(cout_mutex);
 		return false;
 	}
 }
