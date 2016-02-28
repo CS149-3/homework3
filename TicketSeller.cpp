@@ -10,11 +10,16 @@
 #include "TicketSeller.h"
 
 Timer* TicketSeller::timer = nullptr;
+pthread_mutex_t* TicketSeller::cout_mutex = nullptr;
 
 TicketSeller::TicketSeller(string name, seat_matrix* seats) {
 	this->name = name;
 	this->seats = seats;
 	this->start();
+}
+
+void TicketSeller::setCoutMutex(pthread_mutex_t *cout_mutex) {
+	TicketSeller::cout_mutex = cout_mutex;
 }
 
 void TicketSeller::setTimer(class Timer* timer) {
@@ -50,12 +55,16 @@ void* TicketSeller::sellTickets(void *ticketsellerptr) {
 				// spend time selling ticket (this will vary by subclass)
 				sleep(ticketSeller->sellTime());
 				time += ticketSeller->sellTime();
+				pthread_mutex_lock(cout_mutex);
 				cout << timer->currentTime() << " " << currentCustomer->name << " completed purchase\n";
+				pthread_mutex_unlock(cout_mutex);
 			}
 			
 			// remove Customer from queue
 			queue->erase(queue->begin());
+			pthread_mutex_lock(cout_mutex);
 			cout << timer->currentTime() << " " << currentCustomer->name << " left\n";
+			pthread_mutex_unlock(cout_mutex);
 		}
 	}
 	// return nullptr because the compiler said so

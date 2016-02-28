@@ -10,6 +10,7 @@
 #include "Customer.h"
 
 Timer* Customer::timer = nullptr;
+pthread_mutex_t* Customer::cout_mutex = nullptr;
 
 Customer::Customer(string name, int arrivalTime, class TicketSeller* ticketSeller) {
 	this->name = name;
@@ -22,6 +23,10 @@ Customer::Customer(string name, int arrivalTime, class TicketSeller* ticketSelle
 	// wait until arrival
 	pthread_create(&thread, NULL, Customer::wait, this);
 	
+}
+
+void Customer::setCoutMutex(pthread_mutex_t *cout_mutex) {
+	Customer::cout_mutex = cout_mutex;
 }
 
 void Customer::setTimer(class Timer* timer) {
@@ -38,7 +43,9 @@ void* Customer::wait(void *customerptr) {
 	
 	// upon arrival join ticket seller queue
 	customer->ticketSeller->queue.push_back(*customer);
+	pthread_mutex_lock(cout_mutex);
 	cout << timer->currentTime() << " " << customer->name << " arrived\n";
+	pthread_mutex_unlock(cout_mutex);
 	
 	// return nullptr because the compiler said so
 	return nullptr;
