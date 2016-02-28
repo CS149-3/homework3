@@ -35,6 +35,7 @@ int main(int argc, const char * argv[]) {
 	Timer* timer = new Timer();
 	
 	// initialize ticket sellers
+	TicketSeller::initSeatsMutex();
 	TicketSeller::setTimer(timer);
 	
 	TicketSeller* H = new HighTicketSeller("H", seats);
@@ -84,6 +85,9 @@ int main(int argc, const char * argv[]) {
 			cout << "row " << i << ",col " << j << "  "<< seats[i][j] << endl;
 		}
 	}
+	
+	// clean up
+	TicketSeller::destroySeatsMutex();
 	
     return 0;
 }
