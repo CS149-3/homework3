@@ -57,8 +57,8 @@ int main(int argc, const char * argv[]) {
 	TicketSeller* L6 = new LowTicketSeller("L6", seats);
 	
 	// initialize customers, whose number should be based on customers per seller
-	for (int i = 1; i < customersPerSeller; i++) {
-		string current_count_str = i <= 10 ? string("0") + to_string(i) : to_string(i);
+	for (int i = 1; i <= customersPerSeller; i++) {
+		string current_count_str = i < 10 ? string("0") + to_string(i) : to_string(i);
 		
 		Customer::setCoutMutex(&cout_mutex);
 		Customer::setTimer(timer);
@@ -87,14 +87,20 @@ int main(int argc, const char * argv[]) {
 	}
 	
 	// output seats
-	
-	for(int i = 0; i < 10; i++)
-	{
-		for(int j = 0; j < 10; j++)
-		{
-			cout << "row " << i << ",col " << j << "  "<< seats[i][j] << endl;
+	cout << "Final seating assignments:\n";
+	for (int row = 0; row < 10; row ++) {
+		for (int seat = 0; seat < 10; seat++) {
+			string occupant = seats[row][seat] != "" ? seats[row][seat] : "-";
+			
+			cout << " " << occupant << " \t";
 		}
+		cout << "\n";
+		
 	}
+	
+	cout << "H Customers Seated: " << HighTicketSeller::ticketsSold << "\n";
+	cout << "M Customers Seated: " << MediumTicketSeller::ticketsSold << "\n";
+	cout << "L Customers Seated: " << LowTicketSeller::ticketsSold << "\n";
 	
 	// clean up
 	pthread_mutex_destroy(&cout_mutex);
