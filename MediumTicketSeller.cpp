@@ -8,6 +8,8 @@
 
 #include "MediumTicketSeller.h"
 
+int MediumTicketSeller::ticketsSold = 0;
+
 MediumTicketSeller::MediumTicketSeller(string name, seat_matrix* seats) : TicketSeller(name, seats) {
 	
 }
@@ -55,6 +57,7 @@ bool MediumTicketSeller::assignSeat(string customerName) {
 	
 	// if an open seat is found, place the customer there (customerName)
 	if (seatFound) {
+		MediumTicketSeller::ticketsSold++;
 		pthread_mutex_lock(cout_mutex);
 		cout << this->timer->currentTime() << " " << customerName << " was assigned a seat\n";
 		pthread_mutex_unlock(cout_mutex);

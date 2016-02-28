@@ -12,6 +12,7 @@
 class LowTicketSeller : public TicketSeller
 {
 public:
+	static int ticketsSold;
 	LowTicketSeller(string name, seat_matrix* seats);
 	virtual int sellTime();
 	virtual bool assignSeat(string customerName);

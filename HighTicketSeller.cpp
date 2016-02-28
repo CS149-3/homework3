@@ -8,6 +8,8 @@
 
 #include "HighTicketSeller.h"
 
+int HighTicketSeller::ticketsSold = 0;
+
 
 HighTicketSeller::HighTicketSeller(string name, seat_matrix* seats) : TicketSeller(name, seats) {
 	
@@ -39,6 +41,7 @@ bool HighTicketSeller::assignSeat(string customerName) {
 		
 	// if an open seat is found, place the customer there (customerName)
 	if (foundSeat) {
+		HighTicketSeller::ticketsSold++;
 		pthread_mutex_lock(cout_mutex);
 		cout << this->timer->currentTime() << " " << customerName << " was assigned a seat\n";
 		pthread_mutex_unlock(cout_mutex);
