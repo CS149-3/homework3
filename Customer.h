@@ -25,7 +25,10 @@ public:
 	static void setCoutMutex(pthread_mutex_t* cout_mutex);
 	static void setTimer(class Timer* timer);
 	Customer(string name, int arrivalTime, class TicketSeller* ticketSeller);
+	bool operator==(const Customer &other);
+	pthread_t waitThread;
 private:
 	static void* wait(void*);
+	static void* checkWait(void*);
 };
 

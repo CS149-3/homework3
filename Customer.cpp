@@ -12,6 +12,7 @@
 Timer* Customer::timer = nullptr;
 pthread_mutex_t* Customer::cout_mutex = nullptr;
 
+
 Customer::Customer(string name, int arrivalTime, class TicketSeller* ticketSeller) {
 	this->name = name;
 	this->arrivalTime = arrivalTime;
@@ -22,6 +23,7 @@ Customer::Customer(string name, int arrivalTime, class TicketSeller* ticketSelle
 	
 	// wait until arrival
 	pthread_create(&thread, NULL, Customer::wait, this);
+	pthread_create(&waitThread, NULL, Customer::checkWait, this);
 	
 }
 
@@ -31,6 +33,10 @@ void Customer::setCoutMutex(pthread_mutex_t *cout_mutex) {
 
 void Customer::setTimer(class Timer* timer) {
 	Customer::timer = timer;
+}
+
+bool Customer::operator==(const Customer &other){
+	return this->name == other.name;
 }
 
 void* Customer::wait(void *customerptr) {
@@ -50,5 +56,28 @@ void* Customer::wait(void *customerptr) {
 	pthread_mutex_unlock(cout_mutex);
 	
 	// return nullptr because the compiler said so
+	return nullptr;
+}
+
+void* Customer::checkWait(void *customerptr){
+	Customer* customer = static_cast<Customer *>(customerptr);
+	Timer* timer = customer->timer;
+
+	// wait until arrival
+	sleep(customer->arrivalTime);
+
+	for(int i = 0; i < 10; i++){
+			sleep(1);
+		}
+
+	pthread_mutex_lock(&(customer->ticketSeller->queue_mutex));
+	customer->ticketSeller->customerQueue.remove(*customer);
+	pthread_mutex_unlock(&(customer->ticketSeller->queue_mutex));
+
+	pthread_mutex_lock(cout_mutex);
+	cout << timer->currentTime() << " " << customer->name << " departed\n";
+	pthread_mutex_unlock(cout_mutex);
+
+
 	return nullptr;
 }
