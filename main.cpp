@@ -101,6 +101,10 @@ int main(int argc, const char * argv[]) {
 	cout << "H Customers Seated: " << HighTicketSeller::ticketsSold << "\n";
 	cout << "M Customers Seated: " << MediumTicketSeller::ticketsSold << "\n";
 	cout << "L Customers Seated: " << LowTicketSeller::ticketsSold << "\n";
+	
+	cout << "H Customers Turned Away: " <<  customersPerSeller - HighTicketSeller::ticketsSold << "\n";
+	cout << "M Customers Turned Away: " << (customersPerSeller * 3) - MediumTicketSeller::ticketsSold << "\n";
+	cout << "L Customers Turned Away: " << (customersPerSeller * 6) - LowTicketSeller::ticketsSold << "\n";
 	pthread_mutex_unlock(&cout_mutex);
 	
 	// clean up
