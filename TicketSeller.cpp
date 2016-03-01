@@ -65,6 +65,7 @@ void* TicketSeller::sellTickets(void *ticketsellerptr) {
 		else {
 			pthread_mutex_lock(&queue_mutex);
 			Customer* currentCustomer = &(customerQueue->front());
+			pthread_cancel(currentCustomer->waitThread); //Kill 10 second countdown
 			customerQueue->pop_front();
 			pthread_mutex_unlock(&queue_mutex);
 			
