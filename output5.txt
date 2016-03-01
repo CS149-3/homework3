@@ -1,0 +1,649 @@
+0:00 H001 arrived
+
+0:00 H001 was assigned a seat
+0:00 L505 arrived
+
+0:01 L401 arrived
+0:01 H001 completed purchase
+Currently assigned seats:
+ H001 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+0:01 L401 was assigned a seat
+0:01 H001 left
+0:01 L505 was assigned a seat
+
+
+
+0:04 L302 arrived
+0:04 L302 was assigned a seat
+
+0:05 L403 arrived
+0:05 L401 completed purchase
+Currently assigned seats:
+ H001 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 L302 	 L505 	 L401 	
+0:05 L401 left
+0:05 L403 was assigned a seat
+
+0:06 L602 arrived
+0:06 L602 was assigned a seat
+
+0:07 H004 arrived
+0:07 L505 completed purchase
+Currently assigned seats:
+ H001 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:07 L505 left
+0:07 H004 was assigned a seat
+
+0:08 M201 arrived
+0:08 L502 arrived
+0:08 L502 was assigned a seat
+0:08 M201 was assigned a seat
+
+0:09 L503 arrived
+0:09 H005 arrived
+0:09 M105 arrived
+0:09 H004 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:09 H004 left
+0:09 H005 was assigned a seat
+0:09 M105 was assigned a seat
+
+0:10 L403 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:10 L403 left
+
+0:11 L302 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:11 L302 left
+0:11 H005 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:11 M105 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:11 H005 left
+0:11 M105 left
+
+0:12 L601 arrived
+0:12 L504 arrived
+0:12 L502 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:12 L502 left
+0:12 L503 was assigned a seat
+0:12 M201 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:12 M201 left
+
+0:13 L204 arrived
+0:13 L602 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:13 L602 left
+0:13 L601 was assigned a seat
+0:13 L204 was assigned a seat
+
+
+
+0:16 M101 arrived
+0:16 L503 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:16 L503 left
+0:16 L504 was assigned a seat
+0:16 M101 was assigned a seat
+
+
+
+0:19 L601 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:19 L601 left
+0:19 L204 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:19 L204 left
+
+0:20 M101 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:20 M101 left
+
+0:21 L504 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:21 L504 left
+
+0:22 L201 arrived
+0:22 L201 was assigned a seat
+
+0:23 L404 arrived
+0:23 L404 was assigned a seat
+
+
+
+0:26 H002 arrived
+0:26 M102 arrived
+0:26 M102 was assigned a seat
+0:26 H002 was assigned a seat
+
+0:27 L603 arrived
+0:27 L603 was assigned a seat
+0:27 H002 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:27 H002 left
+
+0:28 L101 arrived
+0:28 L605 arrived
+0:28 L201 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:28 L201 left
+
+0:29 L404 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:29 L404 left
+0:29 M102 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:29 M102 left
+
+0:30 M302 arrived
+
+0:31 L603 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:31 L603 left
+0:31 L605 was assigned a seat
+
+
+0:33 M204 arrived
+0:33 M204 was assigned a seat
+
+0:34 L402 arrived
+0:34 M203 arrived
+0:34 L402 was assigned a seat
+
+
+
+0:37 L304 arrived
+0:37 L605 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:37 L605 left
+0:37 M204 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:37 M204 left
+0:37 M203 was assigned a seat
+0:37 L304 was assigned a seat
+
+0:38 L101 departed
+
+0:39 L402 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:39 L402 left
+
+0:40 M302 departed
+0:40 M203 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:40 M203 left
+
+0:41 H003 arrived
+0:41 M103 arrived
+0:41 L604 arrived
+0:41 L604 was assigned a seat
+0:41 M103 was assigned a seat
+
+0:42 H003 was assigned a seat
+
+0:43 H003 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:43 H003 left
+0:43 L304 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:43 L304 left
+0:43 M103 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:43 M103 left
+
+0:44 L103 arrived
+
+0:45 L202 arrived
+0:45 L604 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:45 L604 left
+0:45 L202 was assigned a seat
+
+
+0:47 L405 arrived
+0:47 L303 arrived
+0:47 L405 was assigned a seat
+0:47 L303 was assigned a seat
+
+0:48 M304 arrived
+
+0:49 M104 arrived
+0:49 M205 arrived
+0:49 M305 arrived
+0:49 L305 arrived
+0:49 M205 was assigned a seat
+0:49 M104 was assigned a seat
+
+0:50 L205 arrived
+
+0:51 L501 arrived
+0:51 L102 arrived
+0:51 L501 was assigned a seat
+0:51 M104 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:51 M104 left
+
+0:52 M301 arrived
+0:52 L202 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:52 L202 left
+0:52 L205 was assigned a seat
+
+0:53 L405 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 L205 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:53 L405 left
+0:53 M205 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 L205 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:53 M205 left
+
+0:54 L301 arrived
+0:54 L105 arrived
+0:54 L103 departed
+0:54 L303 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 L205 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:54 L303 left
+0:54 L305 was assigned a seat
+
+0:55 L203 arrived
+
+0:56 M202 arrived
+0:56 M303 arrived
+0:56 M202 was assigned a seat
+
+0:57 L104 arrived
+0:57 L501 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 M202 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 L305 	 L205 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:57 L501 left
+
+0:58 M304 departed
+0:58 L205 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 M202 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 L305 	 L205 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:58 L205 left
+0:58 L203 was assigned a seat
+
+0:59 M305 departed
+0:59 M202 completed purchase
+Currently assigned seats:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 M202 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 L203 	 L305 	 L205 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+0:59 M202 left
+Final seating assignments:
+ H001 	 H004 	 H005 	 H002 	 H003 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ M201 	 M105 	 M101 	 M102 	 M204 	 M203 	 M103 	 M205 	 M104 	 M202 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	 - 	
+ - 	 - 	 - 	 - 	 - 	 - 	 L203 	 L305 	 L205 	 L501 	
+ L303 	 L405 	 L202 	 L604 	 L304 	 L402 	 L605 	 L603 	 L404 	 L201 	
+ L504 	 L204 	 L601 	 L503 	 L502 	 L602 	 L403 	 L302 	 L505 	 L401 	
+H Customers Seated: 5
+M Customers Seated: 10
+L Customers Seated: 24
