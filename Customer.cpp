@@ -75,7 +75,7 @@ void* Customer::checkWait(void *customerptr){
 	pthread_mutex_unlock(&(customer->ticketSeller->queue_mutex));
 
 	pthread_mutex_lock(cout_mutex);
-	cout << timer->currentTime() << " " << customer->name << " departed\n";
+	cout << timer->currentTime() << " " << customer->name << " departed (impatient)\n";
 	pthread_mutex_unlock(cout_mutex);
 
 
